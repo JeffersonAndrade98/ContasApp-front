@@ -54,7 +54,5 @@ function montarDiv(k, v) {
     if (v.status == "ABERTO") {
         $('#status').addClass('span-aberto');
     }
-    
     return strVar;
-
 }
