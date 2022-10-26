@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="assets/css/css.css" rel="stylesheet" />
+  </head>
+
+<body>
+<div class="login-box">
+  <h2>Nova Conta</h2>
+  <form id="formCadastrarConta">
+    <div class="user-box">
+      <select id="tipoConta" name="tipoConta" required="required">select
+        <option>Tipo de Conta</option>
+        <option value="BOLETO">Boleto</option>
+        <option value="FATURA">Fatura</option>
+        <option value="PGTO_DIVERSOS">Pagamentos diversos</option>
+        <option value="CARTÃO_CREDITO">Cartão de crédito</option>
+      </select>
+      <br>
+    </div>
+    <div class="user-box">
+      <select id="idCompanhia" name="idCompanhia" value="" required="required">
+        <option>Empresa</option>
+      </select>
+      <br>
+    </div>
+    <div class="user-box">
+      <input id="vencimento" type="date" name="vencimento" required="">
+      <label></label>
+    </div>
+    <div class="user-box">
+      <input id="valor" type="text" name="valor" required="">
+      <label>Valor</label>
+    </div>
+    <a class="bn59" type="submit" onclick="salvar()">
+      cadastrar
+    </a>
+  </form>
+</div>
+<script type="text/javascript" src="assets/js/salvarConta.js"></script>
+</body>
+</html>
